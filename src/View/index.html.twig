@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            {% for product in products %}
+            <div class="card col-4" style="width: 18rem;">
+            <img src="https://observatoire-des-aliments.fr/wp-content/uploads/2015/09/fruit8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Produits frais de la ferme bernard</h5>
+                    <p class="card-text">{{ product }}
+                    <a href="#" class="btn btn-primary">Acheter</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
